@@ -1,7 +1,8 @@
 function volume_sphere() {
     //Write your code here
 const btn = document.getElementById("submit");
-	btn.addEventListener("click",function(){
+	btn.addEventListener("click",function(e){
+		e.preventDefault();
 		const r = document.getElementById("radius").value;
 		const volume = document.getElementById("volume");
 	
