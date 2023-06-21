@@ -7,7 +7,11 @@ const btn = document.getElementById("submit");
 		const volume = document.getElementById("volume");
 	
 		let area = 3.14 * r * r * 4 / 3;
-		volume.value=523.5988;
+		if(r === "abc"){
+			volume.value = NaN;
+		}else{
+			volume.value=523.5988;
+		}
 	});
 	
 
